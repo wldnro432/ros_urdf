@@ -1,0 +1,4 @@
+Invoking command in '/home/ms/ros_urdf/build/ros_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/ms/ros_urdf/build/ros_urdf -- -j12 -l12
+Invoked command in '/home/ms/ros_urdf/build/ros_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/ms/ros_urdf/build/ros_urdf -- -j12 -l12
+Invoking command in '/home/ms/ros_urdf/build/ros_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /home/ms/ros_urdf/build/ros_urdf
+Invoked command in '/home/ms/ros_urdf/build/ros_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /home/ms/ros_urdf/build/ros_urdf

@@ -1,0 +1,32 @@
+-- Install configuration: ""
+-- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/launch
+-- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/launch/display.launch.py
+-- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/launch/launch_sim.launch.py
+-- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/launch/upload.launch.py
+-- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf
+-- Installing: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf/lidar.xacro
+-- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf/robot.urdf.xacro
+-- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf/camera.xacro
+-- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf/robot_core copy.xacro
+-- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf/robot_core_origin.xacro
+-- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf/inertial_macros.xacro
+-- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf/gazebo_control.xacro
+-- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf/robot_core.xacro
+-- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/rviz
+-- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/rviz/urdf_config.rviz
+-- Execute custom install script
+-- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ament_index/resource_index/package_run_dependencies/ros_urdf
+-- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ament_index/resource_index/parent_prefix_path/ros_urdf
+-- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/environment/ament_prefix_path.sh
+-- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/environment/ament_prefix_path.dsv
+-- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/environment/path.sh
+-- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/environment/path.dsv
+-- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/local_setup.bash
+-- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/local_setup.sh
+-- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/local_setup.zsh
+-- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/local_setup.dsv
+-- Symlinking: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/package.dsv
+-- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ament_index/resource_index/packages/ros_urdf
+-- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/cmake/ros_urdfConfig.cmake
+-- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/cmake/ros_urdfConfig-version.cmake
+-- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/package.xml

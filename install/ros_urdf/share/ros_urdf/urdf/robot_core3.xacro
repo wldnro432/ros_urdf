@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+
+<robot name="ros_urdf" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+    <xacro:include filename="inertial_macros.xacro"/>
+    <xacro:property name="head_length" value="0.335"/>
+    <xacro:property name="head_width" value="0.265"/>
+    <xacro:property name="head_height" value="0.138"/>
+    <xacro:property name="head_mass" value="1.0"/>
+    <xacro:property name="wheel_radius" value="0.033"/>
+    <xacro:property name="wheel_thickness" value="0.026"/>
+    <xacro:property name="wheel_mass" value="0.05"/>
+    <xacro:property name="wheel_offset_x" value="0.226"/>
+    <xacro:property name="wheel_offset_y" value="0.1485"/>
+    <xacro:property name="wheel_offset_z" value="0.01"/>
+    
+    
+    <material name="white">
+        <color rgba="1 1 1 1" />
+    </material>
+
+    <material name="orange">
+        <color rgba="1 0.3 0.1 1"/>
+    </material>
+
+    <material name="blue">
+        <color rgba="0.2 0.2 1 1"/>
+    </material>
+
+    <material name="black">
+        <color rgba="0 0 0 1"/>
+    </material>
+
+    <material name="red">
+        <color rgba="1 0 0 1"/>
+    </material>
+    <!-- start -->
+
+    <link name="base_link">
+    </link>
+
+    <!-- 머리  -->
+    <link name="head">
+        <visual>
+            <origin xyz="${head_length/2} 0 ${head_height/2}"/>
+
+            <geometry>
+                <box size="${head_length} ${head_width} ${head_height}"/>
+            </geometry>
+            
+            <material name="orange"/>
+        </visual>
+
+        <collision>
+            <origin xyz="${head_length/2} 0 ${head_height/2}"/>
+            <geometry>
+                <box size="${head_length} ${head_width} ${head_height}"/>
+            </geometry>
+        </collision>
+
+        <xacro:inertial_box mass="0.5" x="${head_length}" y="${head_width}" z="${head_height}">
+            <origin xyz="${head_length/2} 0 ${head_height/2}" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+
+    <joint name="head_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="base_link_1"/>
+        <origin xyz="${-wheel_offset_x} 0 ${-wheel_offset_z}"/>
+    </joint>
+
+    <!-- base 1    가슴    -->
+    <link name="base_link_1">
+    </link>
+
+    <joint name="base_joint" type="fixed">
+        <parent link="base_link_1"/>
+        <child link="base_link_2"/>
+        <origin xyz="${-wheel_offset_x} 0 ${-wheel_offset_z}"/>
+    </joint>
+
+    <!-- left arm   왼쪽 팔 -->
+    <joint name="left_arm_joint" type="fixed">
+        <parent link="base_link_1"/>
+        <child link="left_arm"/>
+        <origin xyz="${-wheel_offset_x} 0 ${-wheel_offset_z}"/>
+    </joint>
+
+    <link name="left_arm">
+    </link>
+
+    <!-- right arm    오른쪽 팔  -->
+    <joint name="left_arm_joint" type="fixed">
+        <parent link="base_link_1"/>
+        <child link="right_arm"/>
+        <origin xyz="${-wheel_offset_x} 0 ${-wheel_offset_z}"/>
+    </joint>
+
+    <link name="right_arm">
+    </link>
+
+    <!-- base 2    배    -->
+    <link name="base_link_2">
+    </link>
+
+    <joint name="bottom_joint" type="fixed">
+        <parent link="base_link_2"/>
+        <child link="bottom"/>
+        <origin xyz="${-wheel_offset_x} 0 ${-wheel_offset_z}"/>
+    </joint>
+
+    <!-- bottom 다리  -->
+    <link name="bottom">
+        <visual>
+            <origin xyz="${head_length/2} 0 ${head_height/2}"/>
+
+            <geometry>
+                <box size="${head_length} ${head_width} ${head_height}"/>
+            </geometry>
+            
+            <material name="orange"/>
+        </visual>
+
+        <collision>
+            <origin xyz="${head_length/2} 0 ${head_height/2}"/>
+            <geometry>
+                <box size="${head_length} ${head_width} ${head_height}"/>
+            </geometry>
+        </collision>
+
+        <xacro:inertial_box mass="0.5" x="${head_length}" y="${head_width}" z="${head_height}">
+            <origin xyz="${head_length/2} 0 ${head_height/2}" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+
+    <!-- LEFT WHEEL LINK -->
+    <joint name="left_wheel_joint" type="continuous">
+        <parent link="bottom"/>
+        <child link="left_wheel"/>
+        <origin xyz="0 ${wheel_offset_y} 0" rpy="-${pi/2} 0 0" />
+        <axis xyz="0 0 1"/>
+    </joint>
+
+    <link name="left_wheel">
+        <visual>
+            <origin xyz="${head_length/2} 0 ${head_height/2}"/>
+
+            <geometry>
+                <box size="${head_length} ${head_width} ${head_height}"/>
+            </geometry>
+            
+            <material name="orange"/>
+        </visual>
+
+        <collision>
+            <origin xyz="${head_length/2} 0 ${head_height/2}"/>
+            <geometry>
+                <box size="${head_length} ${head_width} ${head_height}"/>
+            </geometry>
+        </collision>
+
+        <xacro:inertial_box mass="0.5" x="${head_length}" y="${head_width}" z="${head_height}">
+            <origin xyz="${head_length/2} 0 ${head_height/2}" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+
+    <!-- RIGHT WHEEL LINK -->
+    <joint name="right_wheel_joint" type="continuous">
+        <parent link="bottom"/>
+        <child link="right_wheel"/>
+        <origin xyz="0 ${wheel_offset_y} 0" rpy="-${pi/2} 0 0" />
+        <axis xyz="0 0 1"/>
+    </joint>
+
+    <link name="right_wheel">
+        <visual>
+            <origin xyz="${head_length/2} 0 ${head_height/2}"/>
+
+            <geometry>
+                <box size="${head_length} ${head_width} ${head_height}"/>
+            </geometry>
+            
+            <material name="orange"/>
+        </visual>
+
+        <collision>
+            <origin xyz="${head_length/2} 0 ${head_height/2}"/>
+            <geometry>
+                <box size="${head_length} ${head_width} ${head_height}"/>
+            </geometry>
+        </collision>
+
+        <xacro:inertial_box mass="0.5" x="${head_length}" y="${head_width}" z="${head_height}">
+            <origin xyz="${head_length/2} 0 ${head_height/2}" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link>
+
+</robot>

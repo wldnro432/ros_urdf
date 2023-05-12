@@ -1,0 +1,29 @@
+[0.012s] Invoking command in '/home/ms/ros_urdf/build/ros_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/ms/ros_urdf/build/ros_urdf -- -j12 -l12
+[0.041s] Invoked command in '/home/ms/ros_urdf/build/ros_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /home/ms/ros_urdf/build/ros_urdf -- -j12 -l12
+[0.091s] Invoking command in '/home/ms/ros_urdf/build/ros_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /home/ms/ros_urdf/build/ros_urdf
+[0.109s] -- Install configuration: ""
+[0.109s] -- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/launch
+[0.109s] -- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/launch/display.launch.py
+[0.109s] -- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf
+[0.109s] -- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf/robot.urdf.xacro
+[0.109s] -- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf/robot_core2.xacro
+[0.109s] -- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf/robot_core copy.xacro
+[0.109s] -- Up-to-date: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf/inertial_macros.xacro
+[0.109s] -- Installing: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/urdf/robot_core.xacro
+[0.110s] -- Execute custom install script
+[0.110s] -- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ament_index/resource_index/package_run_dependencies/ros_urdf
+[0.110s] -- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ament_index/resource_index/parent_prefix_path/ros_urdf
+[0.110s] -- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/environment/ament_prefix_path.sh
+[0.110s] -- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/environment/ament_prefix_path.dsv
+[0.111s] -- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/environment/path.sh
+[0.111s] -- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/environment/path.dsv
+[0.111s] -- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/local_setup.bash
+[0.111s] -- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/local_setup.sh
+[0.112s] -- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/local_setup.zsh
+[0.112s] -- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/local_setup.dsv
+[0.112s] -- Symlinking: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/package.dsv
+[0.114s] -- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ament_index/resource_index/packages/ros_urdf
+[0.114s] -- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/cmake/ros_urdfConfig.cmake
+[0.114s] -- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/cmake/ros_urdfConfig-version.cmake
+[0.114s] -- Up-to-date symlink: /home/ms/ros_urdf/install/ros_urdf/share/ros_urdf/package.xml
+[0.119s] Invoked command in '/home/ms/ros_urdf/build/ros_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /home/ms/ros_urdf/build/ros_urdf
